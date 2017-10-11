@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'All Cats';
+});
+Route::get('/cats/{id}',function ($id){
+    return "all cats #${id}";
+})-> where('id','[0-9]+');
+Route::get('/aboute',function(){
+	$corp = ' iviettech';
+//	return view('about',['corp'=>$corp]);
+    return view('about')->with('corp',$corp);
 });
