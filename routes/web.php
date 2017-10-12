@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "all cats";
+});
+Route::get('/cats/{id}',function( $id){
+	return "cats $id";
+})-> where('id','[0-9]+') ;
+Route::get('/about',function(){
+	$corp = 'iviettech';
+	return view('about')->with('corp',$corp);
 });
