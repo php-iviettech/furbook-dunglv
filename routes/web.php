@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/cats/{id}',function ($id){
     return "all cats #${id}";
 })-> where('id','[0-9]+');
-Route::get('/aboute',function(){
+Route::get('/about',function(){
 	$corp = ' iviettech';
 //	return view('about',['corp'=>$corp]);
     return view('about')->with('corp',$corp);
