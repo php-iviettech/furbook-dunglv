@@ -9,6 +9,8 @@
 	<div class="container">
 		<div class="page-header">
 		@yield('header')
+		<a href="{{ url('/') }}">View All Cat</a> --- 
+		<a href="{{ url('/cats/create') }}">Create New Cat	</a>
 		</div>
 		@if(Session::has('success'))
 		<div class="alert alert-success">

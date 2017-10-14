@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return 'All Cats';
+	$breeds = Furbook\Breed::all();
+	$cats = Furbook\Cat::all();
+    return view('index')-> with('breeds',$breeds)->with('cats',$cats);
 });
 Route::get('/cats/{id}',function ($id){
     return "all cats #${id}";
@@ -30,8 +32,9 @@ Route::get('cat_breed/{name}',function($name){
 	->whereName($name)
 	->first();
 	//dd($breed);    
-	return view('cats.index')->with('breed',$breed)->with('cats',$breed -> cats);    
+	return view('cats.Breed')->with('breed',$breed)->with('cats',$breed -> cats);    
 });
+
 Route::get('cat_view/{id}',function($id){
 	$cat = Furbook\Cat::find($id);
 	//dd($cat);		
@@ -39,10 +42,19 @@ Route::get('cat_view/{id}',function($id){
 })-> where('id','[0-9]+');
 
 Route::get('cats/create',function(){
-	return view('cats.create');
+	$breeds = Furbook\Breed::all();
+	return view('cats.create',compact('breeds'));
 });
+Route::post('cats/create','HandlerController@Create_Cat');
 
-
-Route::get('/test',function(){
-	//dd()
+Route::get('/Success',function(){
+	return view('cats.create-success');
 });
+Route::get('cats/edit/{id}',function($id){
+	$cat = Furbook\Cat::find($id);
+	$breed = Furbook\Breed::all();
+	return view('cats.edit',compact('cat','breed'));
+});
+Route::post('cats/edit/{id}','HandlerController@Edit_Cat');
+
+Route::get('cats/delete','HandlerController@Delete_Cat');

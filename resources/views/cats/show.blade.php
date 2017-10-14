@@ -1,9 +1,7 @@
 @extends('layouts.master')
 
 @section('header')
-	@if(isset($breed))
-		<a href="{{ url('/') }}">Back to OverView</a>
-	@endif
+	
 	<h2>
 		Name cat : @if(isset($cat)) {{ $cat->name }} @endif 
 		
@@ -16,7 +14,7 @@
 	<p>Date of Birth: {{ $cat -> date_of_birth }}</p>
 	<p>
 		@if($cat->breed)
-			Breed <a href="{{ url('cats/breeds/'.$cat->breed->name) }}">{{ $cat->breed->name }}</a>
+			Breed <a href="{{ url('cat_breed/'.$cat->breed->name) }}">{{ $cat->breed->name }}</a>
 		@endif
 	</p>
 @endsection
