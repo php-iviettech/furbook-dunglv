@@ -37,6 +37,11 @@ We would like to extend our thanks to the following sponsors for helping fund on
 - **[Styde](https://styde.net)**
 - [Fragrantica](https://www.fragrantica.com)
 - [SOFTonSOFA](https://softonsofa.com/)
+<<<<<<< HEAD
+=======
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+>>>>>>> develop
 
 ## Contributing
 

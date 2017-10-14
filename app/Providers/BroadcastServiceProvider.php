@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 namespace App\Providers;
+=======
+namespace Furbook\Providers;
+>>>>>>> develop
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

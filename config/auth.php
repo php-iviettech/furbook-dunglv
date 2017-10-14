@@ -67,7 +67,11 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
+<<<<<<< HEAD
             'model' => App\User::class,
+=======
+            'model' => Furbook\User::class,
+>>>>>>> develop
         ],
 
         // 'users' => [

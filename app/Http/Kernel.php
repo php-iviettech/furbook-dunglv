@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 namespace App\Http;
+=======
+namespace Furbook\Http;
+>>>>>>> develop
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -16,8 +20,14 @@ class Kernel extends HttpKernel
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+<<<<<<< HEAD
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+=======
+        \Furbook\Http\Middleware\TrimStrings::class,
+        \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        \Furbook\Http\Middleware\TrustProxies::class,
+>>>>>>> develop
     ];
 
     /**
@@ -27,12 +37,20 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
+<<<<<<< HEAD
             \App\Http\Middleware\EncryptCookies::class,
+=======
+            \Furbook\Http\Middleware\EncryptCookies::class,
+>>>>>>> develop
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+<<<<<<< HEAD
             \App\Http\Middleware\VerifyCsrfToken::class,
+=======
+            \Furbook\Http\Middleware\VerifyCsrfToken::class,
+>>>>>>> develop
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -54,7 +72,11 @@ class Kernel extends HttpKernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
+<<<<<<< HEAD
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+=======
+        'guest' => \Furbook\Http\Middleware\RedirectIfAuthenticated::class,
+>>>>>>> develop
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }

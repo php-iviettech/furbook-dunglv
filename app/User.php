@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 namespace App;
+=======
+namespace Furbook;
+>>>>>>> develop
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

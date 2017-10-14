@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 namespace App\Providers;
+=======
+namespace Furbook\Providers;
+>>>>>>> develop
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +17,11 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
+<<<<<<< HEAD
         'App\Model' => 'App\Policies\ModelPolicy',
+=======
+        'Furbook\Model' => 'Furbook\Policies\ModelPolicy',
+>>>>>>> develop
     ];
 
     /**
