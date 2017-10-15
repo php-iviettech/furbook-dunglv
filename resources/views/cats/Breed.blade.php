@@ -2,7 +2,7 @@
 
 @section('header')
 	@if(isset($breed))
-		<a href="{{ url('/') }}">Back to OverView</a>
+		
 	@endif
 	<h2>
 		All @if(isset($breed)) {{ $breed->name }} @endif Cats

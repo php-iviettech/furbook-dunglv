@@ -6,8 +6,7 @@
 		Name cat : @if(isset($cat)) {{ $cat->name }} @endif 
 		
 	</h2>
-	<a href="{{ url('cats/'.$cat->id.'/edit') }}" class="glyphicon glyphicon-edit">Edit</a>
-	<a href="{{ url('cats/'.$cat->id.'/delete') }}" class="glyphicon glyphicon-trash">Delete</a>
+	
 @endsection
 
 @section('content')
