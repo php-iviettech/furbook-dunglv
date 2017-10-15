@@ -30,11 +30,7 @@ return [
     ],
 
     'stripe' => [
-<<<<<<< HEAD
-        'model' => App\User::class,
-=======
         'model' => Furbook\User::class,
->>>>>>> develop
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Http\Middleware;
-=======
 namespace Furbook\Http\Middleware;
->>>>>>> develop
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

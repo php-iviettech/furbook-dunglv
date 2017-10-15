@@ -1,16 +1,9 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Http\Controllers\Auth;
-
-use App\User;
-use App\Http\Controllers\Controller;
-=======
 namespace Furbook\Http\Controllers\Auth;
 
 use Furbook\User;
 use Furbook\Http\Controllers\Controller;
->>>>>>> develop
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -65,11 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-<<<<<<< HEAD
-     * @return \App\User
-=======
      * @return \Furbook\User
->>>>>>> develop
      */
     protected function create(array $data)
     {

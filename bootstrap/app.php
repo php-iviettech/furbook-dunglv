@@ -28,29 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-<<<<<<< HEAD
-    App\Http\Kernel::class
-=======
     Furbook\Http\Kernel::class
->>>>>>> develop
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-<<<<<<< HEAD
-    App\Console\Kernel::class
-=======
     Furbook\Console\Kernel::class
->>>>>>> develop
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-<<<<<<< HEAD
-    App\Exceptions\Handler::class
-=======
     Furbook\Exceptions\Handler::class
->>>>>>> develop
 );
 
 /*

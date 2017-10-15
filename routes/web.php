@@ -12,17 +12,6 @@
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
-    return "all cats";
-});
-Route::get('/cats/{id}',function( $id){
-	return "cats $id";
-})-> where('id','[0-9]+') ;
-Route::get('/about',function(){
-	$corp = 'iviettech';
-	return view('about')->with('corp',$corp);
-});
-=======
 	$breeds = Furbook\Breed::all();
 	$cats = Furbook\Cat::all();
     return view('index')-> with('breeds',$breeds)->with('cats',$cats);
@@ -69,4 +58,3 @@ Route::get('cats/edit/{id}',function($id){
 Route::post('cats/edit/{id}','HandlerController@Edit_Cat');
 
 Route::get('cats/delete','HandlerController@Delete_Cat');
->>>>>>> develop

@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Console;
-=======
 namespace Furbook\Console;
->>>>>>> develop
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -33,21 +29,14 @@ class Kernel extends ConsoleKernel
     }
 
     /**
-<<<<<<< HEAD
-     * Register the Closure based commands for the application.
-=======
      * Register the commands for the application.
->>>>>>> develop
      *
      * @return void
      */
     protected function commands()
     {
-<<<<<<< HEAD
-=======
         $this->load(__DIR__.'/Commands');
 
->>>>>>> develop
         require base_path('routes/console.php');
     }
 }

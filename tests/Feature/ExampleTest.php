@@ -3,13 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-<<<<<<< HEAD
-use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-=======
 use Illuminate\Foundation\Testing\RefreshDatabase;
->>>>>>> develop
 
 class ExampleTest extends TestCase
 {

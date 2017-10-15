@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Providers;
-=======
 namespace Furbook\Providers;
->>>>>>> develop
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,10 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-<<<<<<< HEAD
-=======
          //View::composer('breeds', 'Furbook\Http\ViewComposers\CatFormComposer');
->>>>>>> develop
     }
 
     /**

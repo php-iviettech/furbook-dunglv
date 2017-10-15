@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Providers;
-=======
 namespace Furbook\Providers;
->>>>>>> develop
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -18,11 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-<<<<<<< HEAD
-    protected $namespace = 'App\Http\Controllers';
-=======
     protected $namespace = 'Furbook\Http\Controllers';
->>>>>>> develop
 
     /**
      * Define your route model bindings, pattern filters, etc.

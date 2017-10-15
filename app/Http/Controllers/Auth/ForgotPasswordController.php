@@ -1,14 +1,8 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Http\Controllers\Auth;
-
-use App\Http\Controllers\Controller;
-=======
 namespace Furbook\Http\Controllers\Auth;
 
 use Furbook\Http\Controllers\Controller;
->>>>>>> develop
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller
